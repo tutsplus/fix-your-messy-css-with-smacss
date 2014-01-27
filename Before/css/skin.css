@@ -1,0 +1,15 @@
+/* This is a skin CSS file where you can set a universal color that will affect all headings and link colors */
+/* Just replace the hex value of the color and background-color with the one you want and you're all set */
+
+p a, h1, h2, h3, ul.testimonials li span  {
+	color: #2b92fa; 
+}
+
+p a:hover {
+	background-color: #2b92fa; /* The background color of the element when you move your mouse over it */
+	color: white; /* The text color of the element when you move your mouse over it */
+}
+
+div.productHeadingType1 .productPriceContainer span, div.productHeadingType2 .productPriceContainer span {
+	color: #00aeff; /* The color of the price text */
+}

@@ -1,0 +1,121 @@
+/**
+ * ----------------------------------------------------------------------------------------
+ * Theme Styles
+ * ----------------------------------------------------------------------------------------
+ */
+
+@accent-color: #2b92fa;
+@secondary-button-color: #3D414D;
+
+/* Theme Margin */
+.theme-margin {
+	margin-bottom: 3em;
+}
+
+hr.theme-margin {
+	margin-bottom: 1em;
+}
+
+
+
+
+
+/* Typography */
+p a {
+	color: @accent-color;
+
+	&:hover {
+		color: white;
+		background-color: @accent-color;
+	}
+}
+
+h1,
+h2,
+h3 {
+	color: @accent-color;
+	font-family: "Droid Sans", Arial, sans-serif;
+}
+
+blockquote cite {
+	color: @accent-color;
+}
+
+
+
+
+
+/* Buttons */
+.theme-button-primary {
+	color: #fff;
+
+	background: @accent-color; /* Old browsers */
+	background: -moz-linear-gradient(top,  @accent-color 0%, darken(@accent-color, 10%) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@accent-color), color-stop(100%,darken(@accent-color, 10%))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  @accent-color 0%,darken(@accent-color, 10%) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  @accent-color 0%,darken(@accent-color, 10%) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  @accent-color 0%,darken(@accent-color, 10%) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  @accent-color 0%,darken(@accent-color, 10%) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@accent-color', endColorstr='darken(@accent-color, 10%)',GradientType=0 ); /* IE6-9 */
+
+	text-shadow: 1px 1px 1px darken(@accent-color, 20%);
+
+	&:hover {
+		background: lighten(@accent-color, 5%); /* Old browsers */
+		background: -moz-linear-gradient(top,  lighten(@accent-color, 5%) 0%, darken(@accent-color, 10%) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,lighten(@accent-color, 5%)), color-stop(100%,darken(@accent-color, 10%))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  lighten(@accent-color, 5%) 0%,darken(@accent-color, 10%) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  lighten(@accent-color, 5%) 0%,darken(@accent-color, 10%) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  lighten(@accent-color, 5%) 0%,darken(@accent-color, 10%) 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  lighten(@accent-color, 5%) 0%,darken(@accent-color, 10%) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='lighten(@accent-color, 5%)', endColorstr='darken(@accent-color, 10%)',GradientType=0 ); /* IE6-9 */
+	}
+}
+
+.theme-button-secondary {
+	border-color: #636770;
+
+	color: #fff;
+
+	background: @secondary-button-color; /* Old browsers */
+	background: -moz-linear-gradient(top,  @secondary-button-color 0%, darken(@secondary-button-color, 10%) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@secondary-button-color), color-stop(100%,darken(@secondary-button-color, 10%))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  @secondary-button-color 0%,darken(@secondary-button-color, 10%) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  @secondary-button-color 0%,darken(@secondary-button-color, 10%) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  @secondary-button-color 0%,darken(@secondary-button-color, 10%) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  @secondary-button-color 0%,darken(@secondary-button-color, 10%) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@secondary-button-color', endColorstr='darken(@secondary-button-color, 10%)',GradientType=0 ); /* IE6-9 */
+
+	&:hover {
+		background: lighten(@secondary-button-color, 5%); /* Old browsers */
+		background: -moz-linear-gradient(top,  lighten(@secondary-button-color, 5%) 0%, darken(@secondary-button-color, 10%) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,lighten(@secondary-button-color, 5%)), color-stop(100%,darken(@secondary-button-color, 10%))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  lighten(@secondary-button-color, 5%) 0%,darken(@secondary-button-color, 10%) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  lighten(@secondary-button-color, 5%) 0%,darken(@secondary-button-color, 10%) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  lighten(@secondary-button-color, 5%) 0%,darken(@secondary-button-color, 10%) 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  lighten(@secondary-button-color, 5%) 0%,darken(@secondary-button-color, 10%) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='lighten(@secondary-button-color, 5%)', endColorstr='darken(@secondary-button-color, 10%)',GradientType=0 ); /* IE6-9 */
+	}
+}
+
+
+
+
+
+/* Forms */
+.theme-form {
+	input[type="text"],
+	input[type="email"],
+	textarea {
+		background-color: #E7EBED;
+
+		border-color: #D3D6D9;
+
+		&:hover,
+		&:focus {
+			background-color: #F1F5F7;
+
+			border-color: #B2B8BE;
+		}
+	}
+}

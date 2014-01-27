@@ -1,0 +1,150 @@
+/**
+ * ----------------------------------------------------------------------------------------
+ * Layout Styles
+ * ----------------------------------------------------------------------------------------
+ */
+
+/* Helper Classes */
+.l-clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.l-align-left {
+	float: left;
+}
+
+.l-align-right {
+	float: right;
+}
+
+.l-align-center {
+	text-align: center;
+}
+
+
+
+
+
+/* General Layout */
+.l-container {
+	margin: 0 auto;
+	width: 1120px;
+}
+
+.l-list-two-col,
+.l-list-three-col,
+.l-inline-list {
+	padding-left: 0;
+	margin: 0;
+
+	li {
+		float: left;
+
+		list-style-type: none;
+	}
+}
+
+.l-list-two-col {
+	> li {
+		margin: 0 2%;
+		width: 46%;
+	}
+}
+
+.l-list-three-col {
+	> li {
+		margin: 0 1.5%;
+		width: 30%;
+	}
+}
+
+.l-inline-list {
+	> li {
+		margin-right: .5em;
+		display: inline;
+	}
+}
+
+.l-checklist {
+	li {
+		background: transparent url(../img/checkListBullet.jpg) left 3px no-repeat;
+		padding-left: 1.5em;
+	}
+}
+
+.l-list-vertical {
+	margin: 0;
+	padding: 0;
+
+	> li {
+		margin-bottom: 1.5em;
+		padding-bottom: 1.5em;
+
+		border-bottom: 1px dotted #CCCCCC;
+
+		list-style-type: none;
+
+		&:last-child {
+			margin-bottom: 0;
+			padding-bottom: 0;
+
+			border-bottom: none;
+		}
+	}
+}
+
+.l-floated-image {
+	margin-right: 1em;
+}
+
+.l-floated-content {
+	margin: -.5em 0 0 4.5em;
+}
+
+
+
+
+
+/* Header */
+#main-header {
+	padding: 1.5em 0;
+
+	background-color: #F8F9FA;
+
+	border-bottom: 1px solid #D1D8DC;
+
+	box-shadow: 0 1px 0 #F3F5F6;
+
+	#social-top {
+		margin-top: .75em;
+	}
+}
+
+
+
+
+
+/* Hero Unit */
+.l-hero-unit {
+	margin-left: 3em;
+	width: 500px;
+}
+
+
+
+
+
+/* Footer */
+#main-footer {
+	padding: 1.5em;
+
+	background-color: #EFF1F3;
+
+	border-top: 1px solid #D1D8DC;
+
+	p {
+		margin: 0;
+	}
+}

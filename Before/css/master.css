@@ -1,0 +1,583 @@
+/******************************* General Styles *******************************/
+body {
+	background: url("../img/topBG.png") 0 0 repeat-x;
+	font-family: Arial, Tahoma, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.fl {float: left;}
+.fr {float: right;}
+
+.cl {clear: left;}
+.cr {clear: right;}
+.cb {clear: both;}
+
+p {
+	color: #6f7986;
+	line-height: 1.5em;
+	margin-bottom: 10px;
+}
+
+	p a {
+		text-decoration: none;
+		color: #2b92fa; /* The skin color - This can be changed if you are going for a diferent color scheme */
+	}
+
+	p a:hover {
+		text-decoration: none;
+		background-color: #2b92fa; /* The skin color - This can be changed if you are going for a diferent color scheme */
+		color: white;
+	}
+	
+h1, h2, h3 {
+	font-family: 'Droid Sans', 'Arial', sans-serif;
+	color: #2b92fa; /* The skin color - This can be changed if you are going for a diferent color scheme */
+	margin-bottom: 15px;
+}
+
+h1 {
+	font-size: 24px;
+}
+
+h2 {
+	font-size: 18px;
+}
+
+h3 {
+	font-size: 16px;
+}
+
+div#mainWrapper {
+	width: 960px;
+	margin: 0 auto;	
+}
+
+div.horizontalSep {
+	background: url("../img/horizontalSeparator.jpg") top center no-repeat;
+	width: 960px;
+	height: 55px;
+	margin-top: 35px;
+}
+
+a.buttonLink, a.buttonLinkWithImage {
+	background: url("../img/buttonBGOut.png") 0 0 repeat-x;
+	font-family: "Droid Sans", "Arial", sans-serif;
+	font-size: 18px;
+	color: white;
+	padding: 10px 30px;
+	text-decoration: none;
+ 
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    
+    position: relative;
+}
+
+a.buttonLink:hover, a.buttonLinkWithImage:hover {
+	background: url("../img/buttonBGOver.png") 0 0 repeat-x;
+}
+
+a.buttonLinkWithImage {
+	padding: 10px 60px 10px 30px;
+}
+
+	a.buttonLinkWithImage img {
+		position: absolute;
+		right: 20px;
+		top: 9px;
+	}
+
+/******************************* Top Section Styles *******************************/
+div#topWrapper {
+	overflow: hidden;
+	height: 114px;
+}
+
+div.logo {
+	padding-top: 34px;
+}
+
+div.topSeparator {
+	background: url("../img/topSeparator.png") left center no-repeat;
+	margin: 14px 10px 0 30px;
+	height: 79px;
+	width: 22px;
+}
+
+ul.socialNav {
+	margin-top: 44px;
+}
+
+	ul.socialNav li {
+		display: inline;
+		margin-right: 5px;
+	}
+
+div.topPhoneNumber {
+	background: url("../img/phoneIcon.png") left center no-repeat;
+	padding-left: 50px;	
+	margin-top: 35px;
+	color: #46494c;
+	font-family: "Droid Sans", "Arial", sans-serif;
+}
+
+	div.topPhoneNumber p {
+		font-size: 14px;
+		margin-bottom: 0;
+	}
+
+	div.topPhoneNumber span {
+		font-size: 18px;
+	}
+
+
+
+/******************************* Product Heading Styles *******************************/
+div.productHeadingType1, div.productHeadingType2, div.productHeadingType3, div.productHeadingType4 {
+	margin-top: 50px;
+	overflow: hidden;
+}
+
+.productImg {
+	margin-right: 20px;
+}
+
+p.productDescription {
+	font-family: "Droid Sans", "Arial", sans-serif;
+	font-size: 14px;
+}
+
+ul.checkList {
+	font-family: "Droid Sans", "Arial", sans-serif;
+	font-size: 14px;
+	color: #2b333d;
+	margin-top: 20px;
+}
+
+	div.productHeadingType1 ul.checkList li, div.productHeadingType2 ul.checkList li {
+		background: url("../img/checkListBullet.jpg") left top no-repeat;
+		float: left;
+		padding-left: 24px;
+		width: 150px;
+		margin-left: 20px;
+		margin-bottom: 10px;
+	}
+
+div.productHeadingType1 .productText, div.productHeadingType2 .productText {
+	width: 400px;
+}
+
+div.productHeadingType1 .productPrice, div.productHeadingType2 .productPrice {
+	width: 249px;
+	background: url("../img/smallBoxShadow.png") bottom center no-repeat;
+	padding: 0 0 24px 17px;
+}
+
+div.productHeadingType1 .productPriceContainer, div.productHeadingType2 .productPriceContainer {
+	border: 5px solid #f4f6f7;
+	text-align: center;
+	padding: 10px 0 0 0;
+	width: 220px;
+	font-family: "Droid Sans", "Arial", sans-serif;
+	
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -khtml-border-radius: 8px;
+    border-radius: 8px;
+}
+
+	div.productHeadingType1 .productPriceContainer p, div.productHeadingType2 .productPriceContainer p {
+		font-size: 14px;
+	}
+
+	div.productHeadingType1 .productPriceContainer span {
+		font-size: 50px;
+		color: #00aeff; /* The skin color - This can be changed if you are going for a diferent color scheme */
+	}
+
+	div.productHeadingType2 .productPriceContainer span {
+		font-size: 30px;
+		color: #00aeff; /* The skin color - This can be changed if you are going for a diferent color scheme */
+	}
+
+div#buttonDarkBG {
+	background-color: #2b333d;
+	padding: 30px 0 30px 0;
+}
+
+
+/******************************* Product Heading Type 3 Styles *******************************/
+div.submitButtonDarkBG {
+	background-color: #2b333d;
+	padding: 42px 30px;
+}
+
+div.productHeadingType3 .productText {
+	width: 600px;
+}
+
+	div.productHeadingType3 .productText h1, div.productHeadingType3 .productText p {
+		margin-left: 20px;
+	}
+
+div.productHeadingType3 .productLargeBox {
+	width: 677px;
+	background: url("../img/bigBoxShadow.png") bottom center no-repeat;
+	padding: 0 0 24px 17px;
+}
+
+div.productHeadingType3 .productTrialForm {
+	border: 5px solid #f4f6f7;
+	text-align: center;
+	width: 650px;
+	font-family: "Droid Sans", "Arial", sans-serif;
+	background-color: white;
+	
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -khtml-border-radius: 8px;
+    border-radius: 8px;
+    
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+form#trialForm ul {
+	margin-top: 20px;
+}
+
+	form#trialForm ul li {
+		text-align: left;
+		margin: 0 0 10px 20px;
+		overflow: hidden;
+	}
+	
+		form#trialForm ul li label {
+			display: block;
+			float: left;
+			width: 140px;
+			font-family: "Droid Sans", "Arial", sans-serif;
+			font-size: 14px;
+			color: #6f7986;
+			margin-top: 11px;
+		}
+
+form#trialForm input[type='text'] {
+	border: 1px solid #d3d6d9;
+	width: 230px;
+	height: 31px;
+	padding: 4px 10px 2px 10px;
+	background-color: #e7ebed;
+
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    
+    font-size: 12px;
+    font-family: "Droid Sans", "Arial", sans-serif;
+}
+
+form#trialForm input[type='text']:hover {
+	border: 1px solid #b2b8be;
+	background-color: #f1f5f7;
+}
+
+form#trialForm input[type='submit'] {
+	background: url("../img/buttonBGOut.png") 0 0 repeat-x;
+	font-family: "Droid Sans", "Arial", sans-serif;
+	font-size: 18px;
+	color: white;
+	padding: 10px 30px;
+	text-decoration: none;
+ 
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    
+    position: relative;
+}
+
+form#trialForm input[type='submit']:hover {
+	background: url("../img/buttonBGOver.png") 0 0 repeat-x;
+}
+
+
+/******************************* Product Heading Type 4 Styles *******************************/
+div.productHeadingType4 .productText {
+	width: 400px;
+}
+
+div.productHeadingType4 .productVideo {
+	width: 523px;
+	background: url("../img/videoBoxShadow.png") bottom center no-repeat;
+	padding: 0 0 24px 17px;
+}
+
+div.productHeadingType4 .productVideoContainer {
+	border: 5px solid #f4f6f7;
+	text-align: center;
+	width: 500px;
+	font-family: "Droid Sans", "Arial", sans-serif;
+	background-color: white;
+	
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -khtml-border-radius: 8px;
+    border-radius: 8px;
+}
+
+div.newsletterContainer {
+	border: 5px solid #f4f6f7;
+	font-family: "Droid Sans", "Arial", sans-serif;
+	
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -khtml-border-radius: 8px;
+    border-radius: 8px;
+    
+    overflow: hidden;
+    
+    background-color: #eff1f3;
+    
+    padding: 15px 20px;
+    margin-top: 20px;
+}
+
+	div.newsletterContainer input[type='text'] {
+		border: 1px solid #d3d6d9;
+		width: 220px;
+		height: 31px;
+		padding: 4px 10px 2px 10px;
+		background-color: white;
+	
+	    -moz-border-radius: 5px;
+	    -webkit-border-radius: 5px;
+	    -khtml-border-radius: 5px;
+	    border-radius: 5px;
+	    
+	    font-size: 12px;
+	    font-family: "Droid Sans", "Arial", sans-serif;
+	}
+	
+	div.newsletterContainer input[type='text']:hover {
+		border: 1px solid #b4bac0;
+	}
+
+
+/******************************* Product Bullet List Styles *******************************/
+ul.iconBulletList {
+	overflow: hidden;
+}
+
+	ul.iconBulletList li {
+		width: 450px;
+		float: left;
+		margin: 0 30px 20px 0;
+	}
+
+		ul.iconBulletList li h2 {
+			margin-top: 10px;
+			margin-left: 70px;
+		}
+
+		ul.iconBulletList li p {
+			margin-left: 70px;
+		}
+
+
+
+/******************************* Product Tabs Styles *******************************/
+div.tabbedArea {
+	border: 5px solid #f4f6f7;
+	
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -khtml-border-radius: 8px;
+    border-radius: 8px;
+    
+    margin-bottom: 50px;
+}
+
+div.tabHeading {
+	background-color: #eff1f3;
+	padding: 30px 30px 20px 30px;
+	overflow: hidden;
+}
+
+div.tabContainer {
+	padding: 30px;
+}
+
+div.tabContent {
+	overflow: hidden;
+}
+
+ul.tabs li {
+	float: left;
+	margin-right: 5px;
+}
+
+	ul.tabs li a {
+	    -moz-border-radius: 8px;
+	    -webkit-border-radius: 8px;
+	    -khtml-border-radius: 8px;
+	    border-radius: 8px;
+	    
+	    padding: 20px 20px 30px 20px;
+	    font-size: 16px;
+	    font-family: "Droid Sans", "Arial", sans-serif;
+	    color: #9198a2;
+	    text-decoration: none;
+	    background-color: #e7eaed;
+	}
+
+	ul.tabs li a:hover {
+	    color: #737981;
+	}
+	
+	ul.tabs li.active {
+		border-right: none;
+	}
+	
+	ul.tabs li.active a {
+		background-color: white;
+		color: #2b333d;
+	}
+
+div.tabContent ul.iconBulletList li {
+	width: 400px;
+}
+
+
+/******************************* Product Testimonials Styles *******************************/
+div.testimonialContainer {
+	border: 5px solid #f4f6f7;
+	font-family: "Droid Sans", "Arial", sans-serif;
+	
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -khtml-border-radius: 8px;
+    border-radius: 8px;
+    
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+img.testimonialIcon {
+	margin: 40px 0 0 30px;
+}
+
+div#boxHeading {
+	background-color: #eff1f3;
+	padding: 30px;
+}
+
+	div#boxHeading h3 {
+		color: #46494c;
+		margin-bottom: 0;
+	}
+	
+ul.testimonials {
+	margin: 30px;
+	overflow: hidden;
+}
+
+ul.testimonials li {
+	font-size: 18px;
+	color: #6f7986;
+	border-bottom: 1px dotted #ccc;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+	ul.testimonials li span {
+		font-size: 14px;
+		color: #2b92fa; /* The skin color - This can be changed if you are going for a diferent color scheme */
+		font-style: normal;
+	}
+	
+
+	
+/******************************* Product Buy Button Styles *******************************/
+div.bigBuyButton {
+	text-align: center;
+	margin: 50px 0;
+}
+
+
+
+/******************************* Footer Section Styles *******************************/
+div.footerMenu {
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+
+div.footerSeparator {
+	background: url("../img/footerSeparator.png") left center no-repeat;
+	margin: 0px 20px 0 30px;
+	height: 135px;
+	width: 22px;
+}
+
+div#socialMedia {
+	width: 230px;
+}
+
+	div#socialMedia ul.socialNav {
+		margin-top: 20px;
+	}
+	
+div#subscribe {
+	width: 330px;
+	overflow: hidden;
+}
+
+	div#subscribe form {
+		margin-top: 20px;
+	}
+	
+	div#subscribe form input[type="text"] {
+		border: 1px solid #d3d6d9;
+		width: 240px;
+		height: 31px;
+		padding: 4px 10px 2px 10px;
+		background-color: #e7ebed;
+
+	    -moz-border-radius: 5px;
+	    -webkit-border-radius: 5px;
+	    -khtml-border-radius: 5px;
+	    border-radius: 5px;
+	    
+	    font-size: 12px;
+	    font-family: "Droid Sans", "Arial", sans-serif;
+	}
+
+	div#subscribe form input[type="text"]:hover {
+		border: 1px solid #b2b8be;
+		background-color: #f1f5f7;
+	}
+
+div#contactInformation {
+	width: 230px;
+}
+
+	div#socialMedia h3, div#subscribe h3, div#contactInformation h3 {
+		color: #46494c;
+	}
+	
+div#footerInformation {
+	background-color: #eff1f3;
+	text-align: center;
+	padding: 25px 0;
+	border-top: 1px solid #d1d8dc;
+}
+
+	div#footerInformation p {
+		margin-bottom: 0;
+	}
